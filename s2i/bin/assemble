@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo "---> Installing redirect conf files"
+mv /tmp/redirect_confs/*.conf /etc/nginx/conf.d/
+
+# Fix source directory permissions
+fix-permissions /etc/nginx/conf.d/
